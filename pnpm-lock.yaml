@@ -34,6 +34,9 @@ devDependencies:
   nx:
     specifier: 19.3.2
     version: 19.3.2
+  prettier:
+    specifier: ^3.3.2
+    version: 3.3.2
   svelte:
     specifier: ^4.2.7
     version: 4.2.18
@@ -5440,6 +5443,15 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+    dev: true
+
+  /prettier@3.3.2:
+    resolution:
+      {
+        integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==,
+      }
+    engines: { node: ">=14" }
+    hasBin: true
     dev: true
 
   /pretty-format@29.7.0:
