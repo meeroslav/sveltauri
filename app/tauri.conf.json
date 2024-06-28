@@ -1,9 +1,9 @@
 {
   "build": {
-    "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build",
+    "beforeDevCommand": "pnpm nx serve frontend",
+    "beforeBuildCommand": "pnpm nx build frontend",
     "devPath": "http://localhost:1420",
-    "distDir": "../build"
+    "distDir": "../dist/frontend"
   },
   "package": {
     "productName": "sveltauri",
@@ -30,7 +30,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.sveltauri.dev",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",

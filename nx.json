@@ -2,9 +2,6 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "outputs": [
-        "{projectRoot}/build"
-      ],
       "cache": true
     },
     "check": {
