@@ -10,39 +10,6 @@
     },
     "check:watch": {
       "command": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-    },
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/frontend"
-      },
-      "configurations": {
-        "development": {
-          "mode": "development"
-        },
-        "production": {
-          "mode": "production"
-        }
-      }
-    },
-    "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "frontend:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "frontend:build:development",
-          "hmr": true
-        },
-        "production": {
-          "buildTarget": "frontend:build:production",
-          "hmr": false
-        }
-      }
     }
   }
 }
